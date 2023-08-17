@@ -36,6 +36,7 @@ public class LibraryManager {
 
     public int rentBook(int index) {
         int result = 0;
+
         if(bList[index] instanceof AniBook) {
             AniBook aniBook = (AniBook) bList[index];
 
