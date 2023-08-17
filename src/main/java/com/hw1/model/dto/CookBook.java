@@ -16,6 +16,14 @@ public class CookBook  extends Book {
         this.coupon = coupon;
     }
 
+    public boolean isCoupon() {
+        return coupon;
+    }
+
+    public void setCoupon(boolean coupon) {
+        this.coupon = coupon;
+    }
+
     @Override
     public String toString() {
         return "CookBook{" +
