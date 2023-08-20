@@ -12,7 +12,7 @@ public class LibraryManager {
     }
 
     public Member myInfo() {
-        return this.mem;
+        return null;
     }
 
     public Book[] selectAll() {
