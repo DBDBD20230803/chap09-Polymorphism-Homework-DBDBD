@@ -44,16 +44,15 @@ public class LibraryMenu {
             }
         }
 
+    }
+
+    public void selectAll() {
+        /* 내가 해야 할 부분 */
         Book[] books = lm.selectAll();
 
         for (int i=0; i<5; i++) {
             System.out.println(books[i]);
         }
-
-    }
-
-    public void selectAll() {
-        /* 내가 해야 할 부분 */
     }
 
     public void searchBook() {
