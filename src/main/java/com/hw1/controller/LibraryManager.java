@@ -22,7 +22,7 @@ public class LibraryManager {
 
 
     public void insertMember(Member mem) {
-
+        this.mem = mem;
     }
 
     public Member myInfo() {
