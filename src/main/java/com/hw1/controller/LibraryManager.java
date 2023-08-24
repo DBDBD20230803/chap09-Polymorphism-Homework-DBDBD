@@ -7,6 +7,7 @@ import com.hw1.model.dto.Member;
 
 public class LibraryManager {
     private Member mem;
+
     private Book[] bList = new Book[5];
 
     {
@@ -37,6 +38,21 @@ public class LibraryManager {
     }
 
     public int rentBook(int index) {
-        return 0;
+        int result = 0;
+
+        if(bList[index] instanceof AniBook) {
+            AniBook aniBook = (AniBook) bList[index];
+
+            if(aniBook.getAccessAge() > mem.getAge()) {
+                result = 1;
+            }
+        } else if(bList[index] instanceof CookBook) {
+            CookBook cookBook = (CookBook) bList[index];
+            if(cookBook.isCoupon() == true) {
+                mem.setCouponCount(mem.getCouponCount() + 1);
+                result = 2;
+            }
+        }
+        return result;
     }
 }
