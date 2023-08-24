@@ -15,10 +15,17 @@ public class AniBook extends Book{
         this.accessAge = accessAge;
     }
 
+    public int getAccessAge() {
+        return accessAge;
+    }
+
+    public void setAccessAge(int accessAge) {
+        this.accessAge = accessAge;
+    }
+
     @Override
     public String toString() {
-        return "AniBook{" +
-                "accessAge=" + accessAge +
-                '}';
+
+        return super.toString() + "AniBook{" + "accessAge=" + accessAge + '}';
     }
 }
