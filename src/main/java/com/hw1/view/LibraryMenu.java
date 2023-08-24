@@ -55,7 +55,16 @@ public class LibraryMenu {
     }
 
     public void searchBook() {
+        System.out.printf("검색할 책의 제목을 입력하세요: ");
+        String title = sc.nextLine();
 
+        Book[] searchList = lm.searchBook(title);
+
+        for(Book book : searchList){
+            if(book != null){
+                System.out.println(book);
+            }
+        }
     }
 
     public void rentBook() {
