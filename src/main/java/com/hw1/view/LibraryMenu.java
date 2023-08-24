@@ -1,12 +1,11 @@
 package com.hw1.view;
-
 import com.hw1.controller.LibraryManager;
 import com.hw1.model.dto.Book;
 import com.hw1.model.dto.Member;
-
 import java.util.Scanner;
 
 public class LibraryMenu {
+
 
     private LibraryManager lm = new LibraryManager();
     Scanner sc = new Scanner(System.in);
@@ -47,7 +46,7 @@ public class LibraryMenu {
     }
 
     public void selectAll() {
-        /* 내가 해야 할 부분 */
+
         Book[] books = lm.selectAll();
 
         for (int i=0; i<5; i++) {
